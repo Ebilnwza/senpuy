@@ -102,17 +102,20 @@
     }
 }
         //clickevent
-        submit.addEventListener('click', function() {
+    submit.addEventListener('click', function() {
     random();
     imgleft.classList.add('miss');
     imgright.classList.add('miss');
+    prediction.classList.add('miss');
     left.classList.add('shaking');
     right.classList.add('shaking');
      setTimeout(function() {
     left.classList.remove('shaking');
     right.classList.remove('shaking');
+        prediction.classList.remove('miss');
     imgleft.classList.remove('miss');
-    imgright.classList.remove('miss');}, 1000);//1วินาที
+    imgright.classList.remove('miss');
+}, 1000);//1วินาที
 });
 
     </script>
